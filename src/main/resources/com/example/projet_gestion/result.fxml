@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="702.0" prefWidth="586.0" styleClass="menuBase" stylesheets="@style2.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projet_gestion.controllers.ResultController">
+   <ImageView fitHeight="89.0" fitWidth="175.0" layoutX="9.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@images/44623631952.png" />
+      </image>
+   </ImageView>
+      <Label fx:id="username" layoutX="432.0" layoutY="108.0" prefHeight="29.0" prefWidth="152.0" text="name ">
+      <graphic>
+            <ImageView fitHeight="17.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@images/angle-petit-bas.png" />
+                </image>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+            </ImageView>
+      </graphic>
+      <cursor>
+         <Cursor fx:constant="TEXT" />
+      </cursor>
+   </Label>
+   <ImageView fitHeight="74.0" fitWidth="72.0" layoutX="472.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@images/user (2).png" />
+      </image>
+   </ImageView>
+   <Button fx:id="back" alignment="BASELINE_LEFT" ellipsisString="" graphicTextGap="22.0" layoutX="448.0" layoutY="664.0" mnemonicParsing="false" onAction="#back" prefHeight="29.0" prefWidth="120.0" styleClass="buttonMenu" stylesheets="style2.css" text="back">
+      <padding>
+         <Insets left="50.0" />
+      </padding>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </Button>
+   <MenuBar layoutX="1.0" layoutY="1.0" prefHeight="29.0" prefWidth="585.0">
+      <menus>
+         <Menu mnemonicParsing="false" text="File">
+            <items>
+               <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+         </Menu>
+         <Menu mnemonicParsing="false" text="Edit">
+            <items>
+               <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+         </Menu>
+         <Menu mnemonicParsing="false" text="Help">
+            <items>
+               <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+         </Menu>
+      </menus>
+   </MenuBar>
+   <ListView layoutY="147.0" prefHeight="41.0" prefWidth="585.0" style="-fx-background-color: #168fe5;" />
+   <Button layoutX="57.0" layoutY="153.0" mnemonicParsing="false" prefHeight="13.0" prefWidth="528.0" style="-fx-background-color: white;" text="MFC &amp; BPMN" />
+   <Button layoutX="-1.0" layoutY="153.0" mnemonicParsing="false" prefHeight="9.0" prefWidth="121.0" style="-fx-background-color: white;" text="Accueil" textAlignment="CENTER" />
+   <Button fx:id="projetBotton" layoutX="115.0" layoutY="153.0" mnemonicParsing="false" prefHeight="13.0" prefWidth="121.0" style="-fx-background-color: white;" text="Project" textAlignment="CENTER" />
+   <Button layoutX="376.0" layoutY="153.0" mnemonicParsing="false" prefHeight="13.0" prefWidth="121.0" style="-fx-background-color: white;" text="Result" textAlignment="CENTER" />
+   <ImageView fitHeight="13.0" fitWidth="15.0" layoutX="233.0" layoutY="161.0">
+      <image>
+         <Image url="@images/fleche-droite.png" />
+      </image>
+   </ImageView>
+   <ImageView fitHeight="13.0" fitWidth="15.0" layoutX="113.0" layoutY="161.0">
+      <image>
+         <Image url="@images/fleche-droite.png" />
+      </image>
+   </ImageView>
+   <ImageView fitHeight="13.0" fitWidth="15.0" layoutX="381.0" layoutY="160.0">
+      <image>
+         <Image url="@images/fleche-droite.png" />
+      </image>
+   </ImageView>
+   <Label layoutX="254.0" layoutY="421.0" prefHeight="30.0" prefWidth="105.0" text="Les flux du BPMN" />
+   <Label fx:id="mfcLabel" layoutX="255.0" layoutY="185.0" prefHeight="0.0" prefWidth="105.0" text="Les flux du MFC">
+      <padding>
+         <Insets bottom="5" left="5" right="5" top="5" />
+      </padding>
+   </Label>
+   <TableView fx:id="bpmnTable" layoutY="446.0" prefHeight="209.0" prefWidth="585.0">
+      <columns>
+         <TableColumn fx:id="bpmnMessageCol" prefWidth="194.46152448654175" text="Message">
+            <cellValueFactory>
+               <PropertyValueFactory property="message" />
+            </cellValueFactory>
+         </TableColumn>
+         <TableColumn fx:id="bpmnEmitterCol" prefWidth="201.84613037109375" text="Émetteur">
+            <cellValueFactory>
+               <PropertyValueFactory property="emetteur" />
+            </cellValueFactory>
+         </TableColumn>
+         <TableColumn fx:id="bpmnReceiverCol" prefWidth="193.64102172851562" text="Récepteur">
+            <cellValueFactory>
+               <PropertyValueFactory property="recepteur" />
+            </cellValueFactory>
+         </TableColumn>
+      </columns>
+      <padding>
+         <Insets bottom="5" left="5" right="5" top="5" />
+      </padding>
+   </TableView>
+   <TableView fx:id="mfcTable" layoutY="213.0" prefHeight="209.0" prefWidth="585.0">
+      <columns>
+         <TableColumn fx:id="mfcMessageCol" prefWidth="187.0769419670105" text="Message">
+            <cellValueFactory>
+               <PropertyValueFactory property="message" />
+            </cellValueFactory>
+         </TableColumn>
+         <TableColumn fx:id="mfcEmitterCol" minWidth="9.025634765625" prefWidth="206.76922607421875" text="Émetteur">
+            <cellValueFactory>
+               <PropertyValueFactory property="emetteur" />
+            </cellValueFactory>
+         </TableColumn>
+         <TableColumn fx:id="mfcReceiverCol" minWidth="0.0" prefWidth="196.92300415039062" text="Récepteur">
+            <cellValueFactory>
+               <PropertyValueFactory property="recepteur" />
+            </cellValueFactory>
+         </TableColumn>
+      </columns>
+      <padding>
+         <Insets bottom="5" left="5" right="5" top="5" />
+      </padding>
+   </TableView>
+</AnchorPane>

@@ -1,0 +1,139 @@
+
+.Menu
+{
+-fx-background-color: linear-gradient(to left, #0890df, #f2be12);
+}
+.activeButtonMenu{
+-fx-text-fill : white;
+-fx-background-color: linear-gradient(to left,#0890df, #f2be12);
+}
+.buttonMenu{
+    -fx-text-fill : white;
+    -fx-background-color: linear-gradient(to left, #0890df, #f2be12);
+}
+
+.buttonMenu:hover{
+    -fx-border-color: #f2be12 ;
+    -fx-border-width: 1 ;
+    -fx-border-style: solid;
+    -fx-border-radius:2;
+    -fx-text-fill : #f2be12;
+    -fx-background-color: linear-gradient(to left, #0890df, #f2be12);
+
+}
+
+.activeButtonMenu:hover{
+-fx-border-color: white ;
+-fx-border-width: 1 ;
+ -fx-border-style: solid;
+-fx-border-radius:2;
+-fx-text-fill : white;
+}
+.btnSelected
+{
+-fx-border-color: white ;
+-fx-border-width: 1 ;
+ -fx-border-style: solid;
+-fx-border-radius:2;
+-fx-text-fill : white;
+
+}
+
+.labelMenu{
+-fx-background-color: #154270;
+-fx-text-fill : #FFFFFF;
+}
+
+.header{
+-fx-border-radius: 25px;
+-fx-background-color: linear-gradient(to right, #0890df, #f2be12);
+}
+.search{
+-fx-background-color:  #EBE2E2;
+ -fx-border-color: #FFFFFF;
+ -fx-border-radius: 2em;
+}
+.logo{
+-fx-border-radius: 10em;
+}
+.error{
+-fx-border-color:#f56217;
+-fx-border-width:2px
+}
+.check-box:selected > .box {
+    /* background color for selected checkbox */
+    -fx-background-color: #f56217;
+}
+
+.check-box > .box {
+    /* background color of unselected checkbox */
+    -fx-background-color: white;
+  /*   -fx-border-color: #ffa100; */
+
+}
+
+.check-box:selected > .box > .mark,
+.check-box:indeterminate  > .box > .mark {
+    /* modify mark color */
+    -fx-background-color: white;
+
+}
+.labelRow{
+-fx-font-weight:bold;
+}
+
+.loginLeftPane{
+    -fx-background-color: linear-gradient(to bottom , #0890df,#0890df,#0890df, #f2be12);
+}
+.loginBtn{
+-fx-background-color:  #0890df;
+-fx-text-fill : #FFFFFF;
+-fx-background-radius:10;
+}
+
+.progress{
+    -fx-text-fill : #0890df;
+}
+
+.Btn2{
+    -fx-background-color: transparent;
+    -fx-text-fill : #f2be12;
+}
+.Btn2:hover{
+    -fx-text-fill : #FFFFFF;
+
+}
+
+.Btn{
+    -fx-background-color:  #f2be12;
+    -fx-text-fill : #FFFFFF;
+    -fx-background-radius:10;
+}
+.Btn:selected{
+    -fx-text-fill : #0890df;
+}
+.Btn:hover{
+    -fx-text-fill : #0890df;
+}
+
+.loginBtn:hover{
+-fx-text-fill : #f2be12;
+}
+.loginBtn:pressed{
+-fx-text-fill : #f5c221;
+    -fx-background-color: #0d5179;
+}
+.loginForgotPass{
+-fx-text-fill : #0890df;
+}
+.loginForgotPass:pressed{
+-fx-text-fill : #371897;
+}
+
+.paneLogin{
+-fx-background-color: linear-gradient(to bottom , #0890df,#0890df,#0890df, #f2be12);
+}
+.cardContent{
+   -fx-background-radius:60;
+   -fx-background-color: #0890df;
+}

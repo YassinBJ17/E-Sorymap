@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="496.0" prefWidth="373.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projet_gestion.controllers.LoginController">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="80.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/44623631952.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="EmailField" layoutX="45.0" layoutY="161.0" prefHeight="40.0" prefWidth="274.0" promptText="E-mail" />
+      <PasswordField fx:id="PassField" layoutX="46.0" layoutY="233.0" prefHeight="39.0" prefWidth="273.0" promptText="Password" />
+      <Button layoutX="54.0" layoutY="319.0" mnemonicParsing="false" onAction="#submit" prefHeight="36.0" prefWidth="249.0" styleClass="loginBtn" stylesheets="@style2.css" text="Connexion">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Label fx:id="logerror" alignment="BOTTOM_LEFT" layoutX="46.0" layoutY="131.0" prefHeight="29.0" prefWidth="276.0" text="Email" />
+      <Label fx:id="forgotPass" alignment="CENTER" layoutX="40.0" layoutY="351.0" prefHeight="35.0" prefWidth="278.0" styleClass="loginForgotPass" stylesheets="@style2.css" text="Forgot password?">
+         <font>
+            <Font name="System Italic" size="12.307692527770996" />
+         </font>
+      </Label>
+      <Label layoutX="46.0" layoutY="103.0" prefHeight="35.0" prefWidth="134.0" text="Sign in" textFill="#168fe5">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+
+      <Label fx:id="loginError1" alignment="BOTTOM_LEFT" layoutX="48.0" layoutY="205.0" prefHeight="29.0" prefWidth="276.0" text="Password" />
+      <Label fx:id="loginError" alignment="CENTER" layoutX="27.0" layoutY="269.0" prefHeight="35.0" prefWidth="278.0" stylesheets="@style2.css" textFill="#9d0000" />
+
+      <Button fx:id="ajout" layoutX="56.0" layoutY="405.0" mnemonicParsing="false" onAction="#addUser" prefHeight="36.0" prefWidth="249.0" styleClass="loginBtn" stylesheets="@style2.css" text="Create new user">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

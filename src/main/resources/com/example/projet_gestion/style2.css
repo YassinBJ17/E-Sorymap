@@ -1,0 +1,150 @@
+
+.Menu
+{
+-fx-background-color: linear-gradient(to left, #0b486b, #168fe5);
+}
+.activeButtonMenu{
+-fx-text-fill : white;
+-fx-background-color: linear-gradient(to left,#0b486b, #F1A241);
+-fx-border-radius: 50px;
+}
+.buttonMenu{
+
+        -fx-background-color:  #168fe5;
+        -fx-text-fill : white;
+        -fx-background-radius:10;
+
+}
+
+.buttonMenu:hover{
+    -fx-background-radius:10;
+    fx-border-radius: 10;
+    -fx-text-fill : #c7c7c7;
+    -fx-background-color:  #F1A241;
+
+
+}
+
+.activeButtonMenu:hover{
+-fx-border-color: white ;
+-fx-border-width: 1 ;
+ -fx-border-style: solid;
+-fx-border-radius:2;
+-fx-text-fill : white;
+}
+.btnSelected
+{
+-fx-border-color: white ;
+-fx-border-width: 1 ;
+ -fx-border-style: solid;
+-fx-border-radius:2;
+-fx-text-fill : white;
+
+}
+.menuBase{
+    -fx-background-image: url("laposte.png") ;
+
+}
+.labelMenu{
+-fx-background-color: #154270;
+-fx-text-fill : #000000;
+}
+
+.header{
+-fx-border-radius: 25px;
+-fx-background-color: linear-gradient(to right, #0b486b, #F1A241);
+}
+.search{
+-fx-background-color:  #EBE2E2;
+ -fx-border-color: #000000;
+ -fx-border-radius: 2em;
+}
+.logo{
+-fx-border-radius: 10em;
+}
+.error{
+-fx-border-color:#f56217;
+-fx-border-width:2px
+}
+.check-box:selected > .box {
+    /* background color for selected checkbox */
+    -fx-background-color: #f56217;
+}
+
+.check-box > .box {
+    /* background color of unselected checkbox */
+    -fx-background-color: white;
+  /*   -fx-border-color: #ffa100; */
+
+}
+
+.check-box:selected > .box > .mark,
+.check-box:indeterminate  > .box > .mark {
+    /* modify mark color */
+    -fx-background-color: white;
+
+}
+.labelRow{
+-fx-font-weight:bold;
+}
+
+.loginLeftPane{
+    -fx-background-color: linear-gradient(to bottom , #168fe5,#168fe5,#168fe5, #F1A241);
+}
+.loginBtn{
+-fx-background-color:  #168fe5;
+-fx-text-fill : white;
+-fx-background-radius:10;
+}
+
+.progress{
+    -fx-text-fill : #0b486b;
+}
+
+.Btn2{
+    -fx-background-color: transparent;
+    -fx-text-fill : #F1A241;
+}
+.Btn2:hover{
+    -fx-text-fill : #FFFFFF;
+
+}
+
+.Btn{
+    -fx-background-color:  #F1A241;
+    -fx-text-fill : #FFFFFF;
+    -fx-background-radius:10;
+}
+.Btn:selected{
+    -fx-text-fill : #0b486b;
+}
+.Btn:hover{
+    -fx-text-fill : #0b486b;
+}
+
+.loginBtn:hover{
+    -fx-background-radius:10;
+    fx-border-radius: 10;
+    -fx-text-fill : #ffffff;
+    -fx-background-color:  #F1A241;
+
+
+}
+.loginBtn:pressed{
+-fx-text-fill : #f5c221;
+    -fx-background-color: #0d5179;
+}
+.loginForgotPass{
+-fx-text-fill : #0b486b;
+}
+.loginForgotPass:pressed{
+-fx-text-fill : #371897;
+}
+
+.paneLogin{
+-fx-background-color: linear-gradient(to bottom , #0b486b,#0b486b,#0b486b, #F1A241);
+}
+.cardContent{
+   -fx-background-radius:60;
+   -fx-background-color: #0b486b;
+}

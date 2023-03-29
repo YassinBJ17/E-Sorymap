@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="496.0" prefWidth="373.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projet_gestion.controllers.LogoutController">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="81.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/44623631952.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="logout" layoutX="54.0" layoutY="319.0" mnemonicParsing="false" onAction="#logout" prefHeight="36.0" prefWidth="249.0" styleClass="loginBtn" stylesheets="@style2.css" text="Logout">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Label fx:id="name" alignment="BOTTOM_LEFT" layoutX="46.0" layoutY="151.0" prefHeight="29.0" prefWidth="276.0" text="Name " />
+
+      <Label fx:id="email" alignment="BOTTOM_LEFT" layoutX="47.0" layoutY="222.0" prefHeight="29.0" prefWidth="276.0" text="Email" />
+      <Label fx:id="loginError" alignment="CENTER" layoutX="27.0" layoutY="269.0" prefHeight="35.0" prefWidth="278.0" stylesheets="@style2.css" textFill="#9d0000" />
+   </children>
+</Pane>

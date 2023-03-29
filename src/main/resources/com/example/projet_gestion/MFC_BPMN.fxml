@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="571.0" prefWidth="584.0" styleClass="menuBase" stylesheets="@style2.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projet_gestion.controllers.MFC_BPMNController">
+   <ImageView fitHeight="89.0" fitWidth="175.0" layoutX="-5.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@images/44623631952.png" />
+      </image>
+   </ImageView>
+      <Label fx:id="username" layoutX="433.0" layoutY="99.0" prefHeight="29.0" prefWidth="152.0" text="name ">
+      <graphic>
+            <ImageView fitHeight="17.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@images/angle-petit-bas.png" />
+                </image>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+            </ImageView>
+      </graphic>
+      <cursor>
+         <Cursor fx:constant="TEXT" />
+      </cursor>
+   </Label>
+   <ImageView fitHeight="74.0" fitWidth="72.0" layoutX="469.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@images/user (2).png" />
+      </image>
+   </ImageView>
+      <Button fx:id="ImportBPMN" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="62.0" layoutY="294.0" mnemonicParsing="false"  prefHeight="81.0" prefWidth="200.0" styleClass="buttonMenu" stylesheets="style2.css" text="Import BPMN">
+          <padding>
+              <Insets left="50.0" />
+          </padding>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+      </Button>
+   <Button fx:id="ImportMFC" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="313.0" layoutY="294.0" mnemonicParsing="false"  prefHeight="81.0" prefWidth="200.0" styleClass="buttonMenu" stylesheets="style2.css" text="Import MFC">
+      <padding>
+         <Insets left="50.0" />
+      </padding>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </Button>
+   <Button fx:id="Check" alignment="BASELINE_LEFT" disable="true" graphicTextGap="22.0" layoutX="189.0" layoutY="400.0" mnemonicParsing="false" onAction="#compare" prefHeight="29.0" prefWidth="206.0" styleClass="buttonMenu" stylesheets="style2.css" text="          Check" textAlignment="CENTER">
+      <padding>
+         <Insets left="50.0" />
+      </padding>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </Button>
+   <Button fx:id="ajoutAgent21" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="14.0" layoutY="528.0" mnemonicParsing="false" onAction="#back" prefHeight="29.0" prefWidth="119.0" styleClass="buttonMenu" stylesheets="style2.css" text="back">
+      <padding>
+         <Insets left="50.0" />
+      </padding>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </Button>
+   <MenuBar layoutX="1.0" layoutY="1.0" prefHeight="28.0" prefWidth="584.0">
+      <menus>
+         <Menu mnemonicParsing="false" text="File">
+            <items>
+               <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+         </Menu>
+         <Menu mnemonicParsing="false" text="Edit">
+            <items>
+               <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+         </Menu>
+         <Menu mnemonicParsing="false" text="Help">
+            <items>
+               <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+         </Menu>
+      </menus>
+   </MenuBar>
+   <ListView layoutX="1.0" layoutY="137.0" prefHeight="41.0" prefWidth="584.0" style="-fx-background-color: #168fe5;" />
+   <Button layoutX="58.0" layoutY="143.0" mnemonicParsing="false" prefHeight="13.0" prefWidth="528.0" style="-fx-background-color: white;" text="MFC &amp; BPMN" />
+   <Button layoutY="143.0" mnemonicParsing="false" prefHeight="9.0" prefWidth="121.0" style="-fx-background-color: white;" text="Accueil" textAlignment="CENTER" />
+   <Button fx:id="projetBotton" layoutX="116.0" layoutY="143.0" mnemonicParsing="false" prefHeight="13.0" prefWidth="121.0" style="-fx-background-color: white;" text="Project" textAlignment="CENTER" />
+   <ProgressIndicator fx:id="importBPMN" layoutX="132.0" layoutY="231.0" progress="0.0" visible="false" />
+   <ProgressIndicator fx:id="importMFC" layoutX="387.0" layoutY="231.0" progress="0.0" visible="false" />
+   <ImageView fitHeight="13.0" fitWidth="15.0" layoutX="112.0" layoutY="151.0">
+      <image>
+         <Image url="@images/fleche-droite.png" />
+      </image>
+   </ImageView>
+   <ImageView fitHeight="13.0" fitWidth="15.0" layoutX="234.0" layoutY="151.0">
+      <image>
+         <Image url="@images/fleche-droite.png" />
+      </image>
+   </ImageView>
+   <Label fx:id="labelMPMN" layoutX="88.0" layoutY="272.0" prefHeight="21.0" prefWidth="142.0" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" />
+   <Label fx:id="labelMFC" layoutX="339.0" layoutY="272.0" prefHeight="21.0" prefWidth="143.0" textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" />
+</AnchorPane>

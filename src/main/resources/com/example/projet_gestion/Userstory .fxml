@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="571.0" prefWidth="536.0" styleClass="menuBase" stylesheets="@style2.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projet_gestion.controllers.UserStoryController">
+   <ImageView fitHeight="89.0" fitWidth="175.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@images/44623631952.png" />
+      </image>
+   </ImageView>
+      <Label fx:id="username" layoutX="431.0" layoutY="103.0" prefHeight="29.0" prefWidth="152.0" text="name ">
+      <graphic>
+            <ImageView fitHeight="17.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@images/angle-petit-bas.png" />
+                </image>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+            </ImageView>
+      </graphic>
+      <cursor>
+         <Cursor fx:constant="TEXT" />
+      </cursor>
+   </Label>
+   <ImageView fitHeight="74.0" fitWidth="72.0" layoutX="458.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@images/user (2).png" />
+      </image>
+   </ImageView>
+   <Button fx:id="back" alignment="BASELINE_LEFT" ellipsisString="" graphicTextGap="22.0" layoutX="453.0" layoutY="514.0" mnemonicParsing="false" onAction="#back" prefHeight="29.0" prefWidth="120.0" styleClass="buttonMenu" stylesheets="style2.css" text="back">
+      <padding>
+         <Insets left="50.0" />
+      </padding>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </Button>
+   <MenuBar prefHeight="28.0" prefWidth="584.0">
+     <menus>
+       <Menu mnemonicParsing="false" text="File">
+         <items>
+           <MenuItem mnemonicParsing="false" text="Close" />
+         </items>
+       </Menu>
+       <Menu mnemonicParsing="false" text="Edit">
+         <items>
+           <MenuItem mnemonicParsing="false" text="Delete" />
+         </items>
+       </Menu>
+       <Menu mnemonicParsing="false" text="Help">
+         <items>
+           <MenuItem mnemonicParsing="false" text="About" />
+         </items>
+       </Menu>
+     </menus>
+   </MenuBar>
+   <Accordion layoutY="125.0" />
+   <Accordion layoutX="203.0" layoutY="125.0" />
+   <ListView layoutX="1.0" layoutY="144.0" prefHeight="41.0" prefWidth="584.0" style="-fx-background-color: #168fe5;" />
+   <Button layoutX="104.0" layoutY="150.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="486.0" style="-fx-background-color: white;" text="User story and Story map" />
+   <Button layoutY="150.0" mnemonicParsing="false" prefHeight="9.0" prefWidth="121.0" style="-fx-background-color: white;" text="Accueil" textAlignment="CENTER" />
+   <Button fx:id="projetBotton" layoutX="120.0" layoutY="150.0" mnemonicParsing="false" prefHeight="13.0" prefWidth="121.0" style="-fx-background-color: white;" text="Project" textAlignment="CENTER" />
+   <ImageView fitHeight="13.0" fitWidth="15.0" layoutX="237.0" layoutY="158.0">
+      <image>
+         <Image url="@images/fleche-droite.png" />
+      </image>
+   </ImageView>
+   <ImageView fitHeight="13.0" fitWidth="15.0" layoutX="111.0" layoutY="158.0">
+      <image>
+         <Image url="@images/fleche-droite.png" />
+      </image>
+   </ImageView>
+   <Button fx:id="projetBotton1" layoutX="446.0" layoutY="150.0" mnemonicParsing="false" prefHeight="13.0" prefWidth="121.0" style="-fx-background-color: white;" text="User story" textAlignment="CENTER" />
+   <ImageView fitHeight="13.0" fitWidth="15.0" layoutX="439.0" layoutY="158.0">
+      <image>
+         <Image url="@images/fleche-droite.png" />
+      </image>
+   </ImageView>
+   <Label layoutX="50.0" layoutY="205.0" text="Epic ">
+      <font>
+         <Font size="16.0" />
+      </font>
+   </Label>
+   <Label fx:id="iduserstory" layoutX="50.0" layoutY="247.0" text="US-01:">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Label>
+   <Label layoutX="50.0" layoutY="340.0" prefHeight="20.0" prefWidth="72.0" text="En tant que:" />
+   <Label layoutX="50.0" layoutY="398.0" prefHeight="20.0" prefWidth="72.0" text="Je veux que :" />
+   <Label layoutX="50.0" layoutY="460.0" prefHeight="21.0" prefWidth="121.0" text="Je suis satisfai si :" />
+   <TextField fx:id="epic" layoutX="150.0" layoutY="202.0" prefHeight="29.0" prefWidth="245.0" />
+   <TextField fx:id="id" layoutX="150.0" layoutY="241.0" prefHeight="29.0" prefWidth="245.0" />
+    <TextField fx:id="num" layoutX="150.0" layoutY="283.0" prefHeight="29.0" prefWidth="245.0" />
+   <TextField fx:id="acteur" layoutX="150.0" layoutY="324.0" prefHeight="50.0" prefWidth="245.0" />
+   <TextField fx:id="besoin" layoutX="150.0" layoutY="387.0" prefHeight="41.0" prefWidth="245.0" />
+   <TextField fx:id="satisfaction" layoutX="150.0" layoutY="441.0" prefHeight="61.0" prefWidth="245.0" />
+   <Button fx:id="insert"  alignment="BASELINE_LEFT" ellipsisString="" graphicTextGap="22.0" layoutX="248.0" layoutY="514.0" mnemonicParsing="false" onAction="#insert" prefHeight="30.0" prefWidth="191.0" styleClass="buttonMenu" stylesheets="style2.css" text="create user-story">
+      <padding>
+         <Insets left="50.0" />
+      </padding>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </Button>
+   <Label layoutX="50.0" layoutY="288.0" prefHeight="21.0" prefWidth="57.0" text="Numéro">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Label>
+   <Label fx:id="alert" layoutX="111.0" layoutY="519.0" prefHeight="21.0" prefWidth="121.0" textFill="#d41f1f" />
+</AnchorPane>
